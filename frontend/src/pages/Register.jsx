@@ -31,7 +31,7 @@ function Register() {
     <>
       <section className="heading">
         <h1>
-          <FaUser />
+          <FaUser style={{ margin: "0 5px -2px 0", fontSize: "40px" }} />
           Register
         </h1>
         <p>Please create an account</p>
@@ -48,6 +48,7 @@ function Register() {
               value={name}
               onChange={onChange}
               placeholder="Enter your name"
+              required
             />
           </div>
           <div className="form-group">
@@ -59,6 +60,7 @@ function Register() {
               value={email}
               onChange={onChange}
               placeholder="Enter your email"
+              required
             />
           </div>
           <div className="form-group">
